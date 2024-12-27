@@ -57,6 +57,31 @@ html, body {
 }
 
 /* Стили для посилання */
+
+.nav-list__link__exit {
+    color: #FF4842;
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: row; /* Иконка слева от текста */
+    align-items: center;
+    justify-content: flex-start; /* Текст и иконка выравниваются по левой стороне */
+    text-decoration: none;
+    padding: 16px 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 273px;
+}
+
+.nav-list__link__exit img {
+    margin-right: 10px; /* Располагаем иконку слева от текста */
+}
+
+
+
+
 .nav-list__link {
     color: #B8BED9;
     margin: 0.5em 0;
@@ -97,7 +122,7 @@ html, body {
     margin: 0 auto;
 }
 
-.section {
+/*section {
     margin-top: 24px;
     max-width: 720px;
     max-height: 244px;
@@ -107,30 +132,45 @@ html, body {
     align-items: flex-start;
     justify-content: space-between;
     margin-left: 32px;
+} */
+.section {
+    display: flex;
+    flex-direction: row; /* Элементы в строку */
+    align-items: center; /* Выравнивание по центру */
+    justify-content: space-between; /* Пространство между элементами */
+    /*padding: 57px 32px 40px 32px; /* Отступы */
+    width: 720px;
+    height: 244px;
+    background-color: #4062FF;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+.content {
+    max-width: 450px; /* Максимальная ширина текста */
 }
 
 .about__h2 {
     color: white;
     font-weight: 400;
     font-size: 24px;
-    margin-top: 57px;
-    margin-left: 32px;
+    margin-top: 0;
 }
 
-.about__h2  strong {
+.about__h2 strong {
     color: white;
     font-weight: 700;
     font-size: 32px;
-    margin-bottom: 22px; /* Отступ между заголовком и кнопкой */
+    margin-left: 40px;
 }
 
-.about__descr {
+.about_desc {
+    font-size: 18px;
+    margin-bottom: 44px;
+    margin-left: 40px;
+    margin-top: 4px;
     color: white;
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 25px;
 }
-
 
 .about__link {
     color: white;
@@ -140,37 +180,24 @@ html, body {
     padding: 16px 24px;
     border-radius: 16px;
     font-size: 18px;
-    margin-top: 22px; /* Отступ для опускания кнопки на 22px */
-    display: table-caption;
+    margin-top: 10px;
+    margin-left: 40px;
 }
 
 .about__link:hover {
     color: #40BAFF;
     background-color: #ffffff;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
 }
 
 .image-block {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start; /* Выравниваем изображение по верхнему краю */
-}
-
-.image-block img {
+    margin-left: 39px;
     width: 313px;
     height: 241px;
-    margin-top: 3px; /* Отступ сверху для изображения */
     margin-right: 23px;
-    margin-left: 39px;
+    margin-top: 3px;
 }
 
-
-
-.container {
-
-    max-width: 783px;
-    margin: 0 auto;
-}
 .section__info {
     margin-bottom: 24px;
     margin-top: 24px;
@@ -217,7 +244,7 @@ html, body {
 .right_panel {
     margin-left: 24px;
     background-color: white;
-    width: 322px;
+    min-width: 322px;
 }
 
 .header__right {
@@ -295,4 +322,82 @@ margin-left: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.footer__text__right {
+    margin-left: 24px;
+    font-size: 24px;
+    margin-right: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.transaction {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Иконка и информация по краям */
+    width: 100%; /* Ширина контейнера */
+    margin-left: 24px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffd700; /* Золотой цвет */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    flex: 1; /* Занимает оставшееся пространство */
+    display: flex;
+    align-items: center; /* Центрирует содержимое по вертикали */
+    padding-left: 10px;
+    margin-right: 22px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Располагает текстовые элементы вертикально */
+    gap: 4px; /* Расстояние между строками */
+    margin-left: 8px;
+}
+
+.name__trans {
+    font-size: 14px;
+    color: #000000; /* Черный цвет текста */
+    margin: 0;
+}
+.named_info{
+    font-size: 12px;
+    color: #000000; /* Черный цвет текста */
+    margin: 0;
+}
+
+.time {
+    font-size: 12px;
+    color: #666666; /* Серый цвет для времени */
+    margin: 0;
+}
+
+.amount {
+    font-size: 12px;
+    font-weight: 400;
+    color: #D64D4D; /* Красный цвет текста */
+    margin: 0;
+    text-align: right;
+    margin-left: 24px; /* Отступ слева */
+}
+
+.amount_plus{
+    font-size: 12px;
+    font-weight: 400;
+    color: #6DD64D; /* Красный цвет текста */
+    margin: 0;
+    text-align: right;
+    margin-left: 24px; /* Отступ слева */
 }
