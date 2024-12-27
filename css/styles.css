@@ -215,21 +215,84 @@ html, body {
 
 
 .right_panel {
-    margin-top: 32px;
     margin-left: 24px;
+    background-color: white;
+    width: 322px;
 }
 
 .header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
 
+
+.right__login {
+    display: flex;
+    align-items: center; /* Выравниваем изображение и текст по вертикали */
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.arrow__down {
+    margin-left: 4px;
 }
 
 .img__right1 {
-
+    width: 32px;
+    height: 32px;
+    margin-right: 8px; /* Отступ от изображения до текста */
 }
 
-.main__right {
+.Notification {
+width: 32px;
+height: 32px;
+margin-left: 24px;
+}
+
+.right__text {
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-left: 24px;
 }
 .card__header {
+    background-color: #4062FF;
+    width: 274px;
+    height: 155px;
+    border-radius: 24px;
+    background-image: url('../img/Maskcard.png'); /* Укажите путь к изображению */
+    background-repeat: no-repeat; /* Изображение не повторяется */
+    background-size: cover; /* Изображение растягивается, сохраняя пропорции */
+    background-position: center; /* Изображение центрируется */
+    margin-left: 24px;
+    margin-right: 24px;
+
+    display: flex; /* Включаем Flexbox */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    gap: 4px; /* Задаём отступ между элементами */
 }
-.footer_right {
+
+.card__title {
+    font-size: 24px;
+    color: white;
+    margin: 0; /* Убираем внешние отступы, если есть */
+}
+
+.card__title2 {
+    font-size: 16px;
+    color: white;
+    margin: 0; /* Убираем внешние отступы, если есть */ 
+}
+
+.card__desc {
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
